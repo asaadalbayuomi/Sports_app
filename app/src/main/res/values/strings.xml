@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name"> تطبيق تمارين
+
+    </string>
+
+<!--    الحقول -->
+    <string name="hint_name" ></string>
+    اسم التمرين اجباري
+
+    <string name="hnit_durctio"></string>
+    المدة
+
+    <string name="hint_groub"></string> المجموعه
+
+    <string name="hint_completed"></string> تم
+    <string name="hint_search"></string> البحت
+    <string name="bt_add"></string> اضافه
+
+    <string name="msg_name_required"></string> الاسم
+    <string name="msg_durctio_required"></string> المدة بالدفائق
+    <string name="msg_durction_invalid"></string> رقم غير صالح
+    <string name="msg_durction_postive"></string> يجب ان تكون اكبر من صفر
+    <string name="msg_added"></string>  تمت الاضافه
+    <string name="msg_deleted"></string> تم الحدف
+    <string name="msg_confirm_deleted"></string> تاكيد الحدف
+    <string name="msg_deleted_question"></string> هل تريد حدف ؟
+    <string name="bt_delete"></string> حدف
+    <string name="bt_cancel"></string> الغاء
+    <string name="label_durction_prefix"></string> المدة
+    <string name="label_durction_suffix"></string> دقيقة
+    <string name="label_group_prefix"></string> العضله بالمجموع
+
+
+
+
+
+</resources>
