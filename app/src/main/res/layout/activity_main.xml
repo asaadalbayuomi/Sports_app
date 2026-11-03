@@ -1,128 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:padding="12dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-    <!--    اسم التمرين يكون اجباري -->
-
+    <!-- اسم التمرين (إجباري) -->
     <EditText
         android:id="@+id/etname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="120dp"
-        android:hint="name "
+        android:hint="@string/hint_name"
         android:inputType="text"
-        android:maxLines="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:maxLines="1" />
 
-    </EditText>
-
-<!--    المدة بالدقائق رقم -->
-
+    <!-- المدة بالدقائق (رقم) -->
     <EditText
         android:id="@+id/etduration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="duration "
+        android:hint="@string/hint_duration"
         android:inputType="number"
-        android:maxLines="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etname"
-        tools:ignore="MissingConstraints">
+        android:maxLines="1" />
 
-    </EditText>
-
-
-<!--    المجموعه العضليه اختياري -->
+    <!-- المجموعة العضلية (اختياري) -->
     <EditText
         android:id="@+id/etgroub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="groub "
+        android:hint="@string/hint_group"
         android:inputType="text"
-        android:maxLines="1"
+        android:maxLines="1" />
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etduration"
-        tools:ignore="MissingConstraints">
-
-    </EditText>
-
-
-
-<!--    للاختيار -->
     <CheckBox
         android:id="@+id/cbcompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="completed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etgroub"
-        tools:ignore="MissingConstraints"></CheckBox>
-
-<!--    -->
-<!--    زر الاضافه -->
+        android:layout_marginTop="8dp"
+        android:text="@string/label_completed" />
 
     <Button
         android:id="@+id/btadd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/cbcompleted"
-        tools:ignore="MissingConstraints"></Button>
+        android:layout_marginTop="8dp"
+        android:text="@string/bt_add" />
 
-
-<!--    البحت-->
+    <!-- البحث -->
     <EditText
-
         android:id="@+id/etsearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_search"
         android:inputType="text"
-        android:maxLines="1"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btadd"
-        tools:ignore="MissingConstraints"></EditText>
+        android:maxLines="1" />
 
-
-<!--    العناصر-->
+    <!-- قائمة التمارين -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etsearch"
-        tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/activity_item" />
 
-    </LinearLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

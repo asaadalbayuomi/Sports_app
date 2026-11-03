@@ -1,37 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"> تطبيق تمارين
+    <string name="app_name">تطبيق تمارين</string>
 
-    </string>
+    <!-- حقول الإدخال -->
+    <string name="hint_name">اسم التمرين (إجباري)</string>
+    <string name="hint_duration">المدة بالدقائق</string>
+    <string name="hint_group">المجموعة العضلية (اختياري)</string>
+    <string name="hint_search">ابحث عن تمرين…</string>
+    <string name="label_completed">تم</string>
+    <string name="bt_add">إضافة</string>
 
-<!--    الحقول -->
-    <string name="hint_name" ></string>
-    اسم التمرين اجباري
+    <!-- رسائل التحقق -->
+    <string name="msg_name_required">الاسم إجباري</string>
+    <string name="msg_duration_required">المدة مطلوبة</string>
+    <string name="msg_duration_invalid">رقم غير صالح</string>
+    <string name="msg_duration_positive">يجب أن تكون المدة أكبر من صفر</string>
 
-    <string name="hnit_durctio"></string>
-    المدة
+    <!-- رسائل النتيجة -->
+    <string name="msg_added">تمت الإضافة</string>
+    <string name="msg_add_failed">فشلت الإضافة</string>
+    <string name="msg_deleted">تم الحذف</string>
 
-    <string name="hint_groub"></string> المجموعه
+    <!-- الحوار -->
+    <string name="msg_confirm_delete">تأكيد الحذف</string>
+    <string name="msg_delete_question">هل تريد حذف \"%1$s\"؟</string>
+    <string name="bt_delete">حذف</string>
+    <string name="bt_cancel">إلغاء</string>
 
-    <string name="hint_completed"></string> تم
-    <string name="hint_search"></string> البحت
-    <string name="bt_add"></string> اضافه
-
-    <string name="msg_name_required"></string> الاسم
-    <string name="msg_durctio_required"></string> المدة بالدفائق
-    <string name="msg_durction_invalid"></string> رقم غير صالح
-    <string name="msg_durction_postive"></string> يجب ان تكون اكبر من صفر
-    <string name="msg_added"></string>  تمت الاضافه
-    <string name="msg_deleted"></string> تم الحدف
-    <string name="msg_confirm_deleted"></string> تاكيد الحدف
-    <string name="msg_deleted_question"></string> هل تريد حدف ؟
-    <string name="bt_delete"></string> حدف
-    <string name="bt_cancel"></string> الغاء
-    <string name="label_durction_prefix"></string> المدة
-    <string name="label_durction_suffix"></string> دقيقة
-    <string name="label_group_prefix"></string> العضله بالمجموع
-
-
-
-
-
+    <!-- نصوص العنصر -->
+    <string name="label_duration">المدة: %1$d دقيقة</string>
+    <string name="label_group">العضلة: %1$s</string>
+    <string name="label_empty_group">العضلة: —</string>
 </resources>
